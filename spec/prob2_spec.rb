@@ -5,7 +5,7 @@ RSpec.describe TodoList do
     it "adds a todo to the list" do
       todo_list = TodoList.new
       todo_list.add("todo1")
-      expect(todo_list.todos).to include("Buy groceries")
+      expect(todo_list.todos).to include("todo1")
     end
   end
 
@@ -22,7 +22,7 @@ RSpec.describe TodoList do
       todo_list = TodoList.new
       todo_list.add("todo1")
       todo_list.add("todo2")
-      expect(todo_list.todos).to eq(["todo1", "todo2])
+      expect(todo_list.todos).to eq(["todo1", "todo2"])
     end
   end
 end

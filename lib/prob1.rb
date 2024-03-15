@@ -1,7 +1,7 @@
 class User
   attr_reader :username, :logged_in
 
-  def initialize(username)
+  def initialize(username = "MattMcMeans")
     @username = username
     @logged_in = false
   end
